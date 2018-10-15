@@ -109,6 +109,7 @@ body {
 @media screen and (max-width: 864px) {
     .gallery {
         width: 100%;
+        margin-top: -100px;
     }
 
     .gallery .image1 {
