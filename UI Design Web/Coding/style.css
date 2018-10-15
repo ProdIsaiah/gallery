@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #242424;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav {
+    width: 100%;
+    margin-top: 10px;
+    height: 60px;
+    padding: 0;
+    line-height: 70px;
+}
+
+.nav img {
+    float: left;
+    margin: 25px 5px 30px 5px;
+}
+
+.nav .img1 {
+    margin-left: 30px;
+}
+
+.nav a img:hover {
+    opacity: .7;
+}
+
+.title  {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.title h1 {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.title p {
+    font-size: 12px;
+    margin-top: -60px;
+    position: relative;
+}
+
+.hamburger {
+    top: 10px;
+    right: 40px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.gallery {
+    width: 1080px;
+    height: 70vh;
+    /* background: white; */
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+
+.gallery .image1 {
+    width: 250px;
+    height: 500px;
+    /* background: red; */
+    margin-left: 100px;
+    position: relative;
+    top: 80px;
+}
+
+.gallery .image2 {
+    width: 500px;
+    height: 235px;
+    /* background: green; */
+    margin-left: 380px;
+    position: relative;
+    top: -420px;
+}
+
+.gallery .image3 {
+    width: 600px;
+    height: 235px;
+    /* background: green; */
+    margin-left: 380px;
+    position: relative;
+    top: -390px;
+}
+
+.gallery .image1 img {
+    width: 250px;
+    height: 500px;
+}
+
+.gallery .image2 img {
+    width: 600px;
+    height: 235px;
+}
+
+.gallery .image3 img {
+    width: 600px;
+    height: 235px;
+}
+
+@media screen and (max-width: 864px) {
+    .gallery {
+        width: 100%;
+    }
+
+    .gallery .image1 {
+        margin-top: 50px;
+        margin-left: 5%;
+        width: 30%;
+        height: 500px;
+        background: url(/Images/oranges2.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .gallery .image1 img {
+        display: none;
+    }
+    .gallery .image2 {
+        margin-top: -00px;
+        width: 30%;
+        height: 500px;
+        margin-left: 35%;
+        background: url(/Images/pineapple.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .gallery .image2 img {
+        display: none;
+    }
+
+    .gallery .image3 {
+        background: url(/Images/watermelons.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 30%;
+        height: 500px;
+        margin-top: -530px;
+        margin-left: 65%;
+    }
+
+    .gallery .image3 img {
+        display: none;
+    }
+
+    .gallery .image1:hover {
+        cursor: pointer;
+        opacity: .7;
+    }
+
+    .gallery .image2:hover {
+        cursor: pointer;
+        opacity: .7;
+    }
+
+    .gallery .image3:hover {
+        cursor: pointer;
+        opacity: .7;
+    }
+}
