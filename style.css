@@ -116,7 +116,7 @@ body {
         margin-left: 5%;
         width: 30%;
         height: 500px;
-        background: url(/Images/oranges2.png);
+        background: url(Images/oranges2.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -129,7 +129,7 @@ body {
         width: 30%;
         height: 500px;
         margin-left: 35%;
-        background: url(/Images/pineapple.png);
+        background: url(Images/pineapple.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -140,7 +140,7 @@ body {
     }
 
     .gallery .image3 {
-        background: url(/Images/watermelons.png);
+        background: url(Images/watermelons.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
