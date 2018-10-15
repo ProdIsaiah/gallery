@@ -168,4 +168,10 @@ body {
         cursor: pointer;
         opacity: .7;
     }
+    .title h1 {
+        font-size: 15px;
+    }
+    .title p {
+        font-size: 8px;
+    }
 }
