@@ -248,7 +248,9 @@ footer p a {
     right: 234px;
 }
 
-.modal-content, 
+.modal-content, .close {
+    
+}
 
 .close {
     position: absolute;
