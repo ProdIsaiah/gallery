@@ -20,53 +20,33 @@
         <div class="hamburger" style="width: 15px; height: 15px;">	&#9776;</div>
     </div>
 
+    
+
     <div class="gallery">
-        <div class="image1"> <img src="Images/oranges2.png" alt="oranges" id="myImg"/></div>
-        <div class="image2"> <img src="Images/pineapple.png" alt="pineapple"  id="myImg2"/></div>
-        <div class="image3"> <img src="Images/watermelons.png" alt="Watermelons"  id="myImg3"/></div>
-            
-        <div class="modal" id="myModal">
-            <span class="close">&times;</span>
-            <img class="model-content" id="img01">
-            <div id="caption"></div>
-        </div>
+        <div class="image1" id="image1"> </div>
+        <div class="image2"> </div>
+        <div class="image3"> </div>
     </div>
 
+    
+    <div class="modal">
+            <div class="close" id="close">&#10005;</div>
+            <div class="modal-content">
+                <a href="https://www.instagram.com/bellisaaaa/"><img class="insta" src="Images/social logos/insta.png" alt="instagram" style="width: 28px; height: 28px;"/></a>
+            
+            </div>
+        </div>
+    
+    <footer>
+        <p class="made-by">Made By |<a href="https://www.instagram.com/prod.isaiah/"> Isaiah Goycochea</a></p>
+    </footer>
+
     <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('myImg');
-        var img2 = document.getElementById('myImg2');
-        var img3 = document.getElementById('myImg3');
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function(){
-            modal.style.display = "block";
-            modal.style.paddingTop = "150px";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-        img2.onclick = function(){
-            modal.style.display = "block";
-            modal.style.paddingTop = "300px";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-        img3.onclick = function(){
-            modal.style.display = "block";
-            modal.style.paddingTop = "300px";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-        modal.style.display = "none";
-        }
+        document.getElementById('image1').addEventListener('click', function(){
+            document.querySelector('.modal').style.display = 'flex';
+        });
+        document.querySelector('.close').addEventListener('click', function(){
+            document.querySelector('.modal').style.display = 'none';
+        });
     </script>
 </html>
