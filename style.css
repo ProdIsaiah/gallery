@@ -138,9 +138,7 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
     }
-    .gallery .image1 img {
-        display: none;
-    }
+
     .gallery .image2 {
         margin-top: -00px;
         width: 30%;
@@ -152,9 +150,6 @@ body {
         background-repeat: no-repeat;
     }
 
-    .gallery .image2 img {
-        display: none;
-    }
 
     .gallery .image3 {
         background: url(Images/maze.JPG);
@@ -165,25 +160,6 @@ body {
         height: 500px;
         margin-top: -530px;
         margin-left: 65%;
-    }
-
-    .gallery .image3 img {
-        display: none;
-    }
-
-    .gallery .image1:hover {
-        cursor: pointer;
-        opacity: .7;
-    }
-
-    .gallery .image2:hover {
-        cursor: pointer;
-        opacity: .7;
-    }
-
-    .gallery .image3:hover {
-        cursor: pointer;
-        opacity: .7;
     }
     .title h1 {
         font-size: 15px;
@@ -249,7 +225,7 @@ footer p a {
 }
 
 .modal-content, .close {
-    
+    animation: zoom 2s;
 }
 
 .close {
