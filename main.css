@@ -60,6 +60,54 @@ body, #slider, .wrap, .slide-content {
     display: none;
 }
 
+
+.slide-content .description2 {
+    width: 700px;
+    height: 50vh;
+    background: white;
+    border-radius: 4px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
+    display: none;
+}
+
+.slide-content .description2 p {
+    padding: 60px;
+}
+
+.slide-content .description2 i {
+    position: relative;
+    top: 5px;
+    right: 10px;
+}
+
+
+.slide-content .description3 {
+    width: 700px;
+    height: 50vh;
+    background: white;
+    border-radius: 4px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 999;
+    display: none;
+}
+
+.slide-content .description3 p {
+    padding: 60px;
+}
+
+.slide-content .description3 i {
+    position: relative;
+    top: 5px;
+    right: 10px;
+}
+
 .slide-content .description i {
     position: relative;
     top: 5px;

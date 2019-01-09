@@ -21,7 +21,7 @@
                <div class="slide-content">
                    <span><i id="info" class="fas fa-info-circle"></i></span>
                 <div class="description">
-                    <span><i class="fas fa-times"></i></span>
+                    <span><i id="times" class="fas fa-times"></i></span>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas inventore numquam blanditiis ducimus facilis voluptatem, architecto officiis totam, suscipit fugit exercitationem perspiciatis minima, tempora nesciunt porro nostrum ullam asperiores expedita a dicta? Esse dolorum, eos totam, officiis eum voluptates vero voluptate fugiat nam excepturi quo eaque eligendi perspiciatis velit similique tempora nostrum omnis corporis quod quasi unde ex cumque harum. Itaque quisquam voluptas doloremque! Nostrum placeat provident quidem recusandae, magni praesentium ipsum quibusdam, ad eveniet blanditiis culpa, delectus quis. Harum voluptas possimus distinctio, at saepe illo, quo porro voluptate corporis aliquid officia ratione perspiciatis nesciunt optio ad! Sed, repudiandae tempore.
                     </p>
@@ -31,8 +31,8 @@
            <div class="slide slide2">
                 <div class="slide-content">
                         <span><i id="info2" class="fas fa-info-circle"></i></span>
-                     <div class="description">
-                         <span><i class="fas fa-times"></i></span>
+                     <div class="description2">
+                         <span><i id="times2" class="fas fa-times"></i></span>
                          <p>
                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas inventore numquam blanditiis ducimus facilis voluptatem, architecto officiis totam, suscipit fugit exercitationem perspiciatis minima, tempora nesciunt porro nostrum ullam asperiores expedita a dicta? Esse dolorum, eos totam, officiis eum voluptates vero voluptate fugiat nam excepturi quo eaque eligendi perspiciatis velit similique tempora nostrum omnis corporis quod quasi unde ex cumque harum. Itaque quisquam voluptas doloremque! Nostrum placeat provident quidem recusandae, magni praesentium ipsum quibusdam, ad eveniet blanditiis culpa, delectus quis. Harum voluptas possimus distinctio, at saepe illo, quo porro voluptate corporis aliquid officia ratione perspiciatis nesciunt optio ad! Sed, repudiandae tempore.
                          </p>
@@ -42,8 +42,8 @@
         <div class="slide slide3">
                 <div class="slide-content">
                         <span><i id="info3" class="fas fa-info-circle"></i></span>
-                     <div class="description">
-                         <span><i  class="fas fa-times"></i></span>
+                     <div class="description3">
+                         <span><i id="times3" class="fas fa-times"></i></span>
                          <p>
                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas inventore numquam blanditiis ducimus facilis voluptatem, architecto officiis totam, suscipit fugit exercitationem perspiciatis minima, tempora nesciunt porro nostrum ullam asperiores expedita a dicta? Esse dolorum, eos totam, officiis eum voluptates vero voluptate fugiat nam excepturi quo eaque eligendi perspiciatis velit similique tempora nostrum omnis corporis quod quasi unde ex cumque harum. Itaque quisquam voluptas doloremque! Nostrum placeat provident quidem recusandae, magni praesentium ipsum quibusdam, ad eveniet blanditiis culpa, delectus quis. Harum voluptas possimus distinctio, at saepe illo, quo porro voluptate corporis aliquid officia ratione perspiciatis nesciunt optio ad! Sed, repudiandae tempore.
                          </p>
@@ -108,17 +108,26 @@
                 document.querySelector('.description').style.display = 'flex';
             });
 
-            document.querySelector('.fa-times').addEventListener('click',function(){
-                document.querySelector('.description').style.display = 'none';
-            });
-            
             document.getElementById('info2').addEventListener('click', function(){
-                document.querySelector('.description').style.display = 'flex';
+                document.querySelector('.description2').style.display = 'flex';
             });
 
             document.getElementById('info3').addEventListener('click', function(){
-                document.querySelector('.description').style.display = 'flex';
+                document.querySelector('.description3').style.display = 'flex';
             });
+
+            document.getElementById('times').addEventListener('click',function(){
+                document.querySelector('.description').style.display = 'none';
+            });
+
+            document.getElementById('times2').addEventListener('click',function(){
+                document.querySelector('.description2').style.display = 'none';
+            });
+
+            document.getElementById('times3').addEventListener('click',function(){
+                document.querySelector('.description3').style.display = 'none';
+            });
+            
     </script>
     <div class="footer">
         <div class="title">
