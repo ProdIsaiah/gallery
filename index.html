@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ProdIsaiah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrap">
+       <div id="arrow-left" class="arrow"></div>
+       <div id="slider">
+           <div class="slide slide1">
+               <div class="slide-content">
+                   <span><i class="fas fa-info-circle"></i></span>
+                <div class="description">
+                    <span><i class="fas fa-times"></i></span>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas inventore numquam blanditiis ducimus facilis voluptatem, architecto officiis totam, suscipit fugit exercitationem perspiciatis minima, tempora nesciunt porro nostrum ullam asperiores expedita a dicta? Esse dolorum, eos totam, officiis eum voluptates vero voluptate fugiat nam excepturi quo eaque eligendi perspiciatis velit similique tempora nostrum omnis corporis quod quasi unde ex cumque harum. Itaque quisquam voluptas doloremque! Nostrum placeat provident quidem recusandae, magni praesentium ipsum quibusdam, ad eveniet blanditiis culpa, delectus quis. Harum voluptas possimus distinctio, at saepe illo, quo porro voluptate corporis aliquid officia ratione perspiciatis nesciunt optio ad! Sed, repudiandae tempore.
+                    </p>
+                </div>
+               </div>
+           </div>
+           <div class="slide slide2">
+                <div class="slide-content">
+                        <span><i class="fas fa-info-circle"></i></span>
+                     <div class="description">
+                         <span><i class="fas fa-times"></i></span>
+                         <p>
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas inventore numquam blanditiis ducimus facilis voluptatem, architecto officiis totam, suscipit fugit exercitationem perspiciatis minima, tempora nesciunt porro nostrum ullam asperiores expedita a dicta? Esse dolorum, eos totam, officiis eum voluptates vero voluptate fugiat nam excepturi quo eaque eligendi perspiciatis velit similique tempora nostrum omnis corporis quod quasi unde ex cumque harum. Itaque quisquam voluptas doloremque! Nostrum placeat provident quidem recusandae, magni praesentium ipsum quibusdam, ad eveniet blanditiis culpa, delectus quis. Harum voluptas possimus distinctio, at saepe illo, quo porro voluptate corporis aliquid officia ratione perspiciatis nesciunt optio ad! Sed, repudiandae tempore.
+                         </p>
+                     </div>
+                    </div>
+            </div>
+        <div class="slide slide3">
+                <div class="slide-content">
+                        <span><i class="fas fa-info-circle"></i></span>
+                     <div class="description">
+                         <span><i class="fas fa-times"></i></span>
+                         <p>
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas inventore numquam blanditiis ducimus facilis voluptatem, architecto officiis totam, suscipit fugit exercitationem perspiciatis minima, tempora nesciunt porro nostrum ullam asperiores expedita a dicta? Esse dolorum, eos totam, officiis eum voluptates vero voluptate fugiat nam excepturi quo eaque eligendi perspiciatis velit similique tempora nostrum omnis corporis quod quasi unde ex cumque harum. Itaque quisquam voluptas doloremque! Nostrum placeat provident quidem recusandae, magni praesentium ipsum quibusdam, ad eveniet blanditiis culpa, delectus quis. Harum voluptas possimus distinctio, at saepe illo, quo porro voluptate corporis aliquid officia ratione perspiciatis nesciunt optio ad! Sed, repudiandae tempore.
+                         </p>
+                     </div>
+                    </div>
+        </div>
+       </div>
+       <div id="arrow-right" class="arrow"></div> 
+    </div>
+    <script>
+        let sliderImages = document.querySelectorAll('.slide'),
+            arrowLeft = document.querySelector('#arrow-left'),
+            arrowRight = document.querySelector('#arrow-right'),
+            current = 0;
+
+            //clear all images
+            function reset(){
+                for(let i = 0; i < sliderImages.length; i++){
+                    sliderImages[i].style.display = 'none';
+                }
+            }
+
+            //int slider
+            function startSlide(){
+                reset();
+                sliderImages[0].style.display = 'block';
+            }
+
+            // Show prev
+            function slideLeft(){
+                reset();
+                sliderImages[current - 1].style.display = 'block';
+                current--;
+            }
+
+            // Show next
+            function slideRight(){
+                reset();
+                sliderImages[current + 1].style.display = 'block';
+                current++;
+            }
+
+            // Left arrow click
+            arrowLeft.addEventListener('click', function(){
+                if(current === 0){
+                    current = sliderImages.length;
+                }
+                slideLeft();
+            });
+
+            // Right arrow click
+            arrowRight.addEventListener('click', function(){
+                if(current === sliderImages.length - 1){
+                    current = -1;
+                }
+                slideRight();
+            });
+
+            startSlide();
+    </script>
+    <div class="footer">
+        <div class="title">
+            <img src="/images/Diamond2.png" alt="logo">
+        </div>
+        <div class="ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="info.html">Contact</a></li>
+        </div>
+    </div>
+</body>
+</html>
