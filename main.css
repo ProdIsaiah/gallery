@@ -204,3 +204,38 @@ body, #slider, .wrap, .slide-content {
     font-weight: lighter;
     font-family: 'Poppins', sans-serif;
 }
+
+.center-logo {
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo-hover {
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo-hover img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
+}
+
+.logo-hover img:hover {
+    animation: zoom 1.5s ease-out;
+}
+
+@keyframes zoom {
+    0%, 100% {
+        width: 150px;
+        height: 150px;
+    }
+    50% {
+        width: 200px;
+        height: 200px;
+    }
+}
