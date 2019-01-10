@@ -48,7 +48,7 @@ body, #slider, .wrap, .slide-content {
 }
 
 .slide-content .description {
-    width: 700px;
+    width: 500px;
     height: 50vh;
     background: white;
     border-radius: 4px;
@@ -62,7 +62,7 @@ body, #slider, .wrap, .slide-content {
 
 
 .slide-content .description2 {
-    width: 700px;
+    width: 500px;
     height: 50vh;
     background: white;
     border-radius: 4px;
@@ -86,7 +86,7 @@ body, #slider, .wrap, .slide-content {
 
 
 .slide-content .description3 {
-    width: 700px;
+    width: 500px;
     height: 50vh;
     background: white;
     border-radius: 4px;
