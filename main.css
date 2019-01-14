@@ -239,3 +239,91 @@ body, #slider, .wrap, .slide-content {
         height: 200px;
     }
 }
+
+.social-media {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: white;
+    display: none;
+}
+
+.social-media .social-images {
+    transform: translate(-50%,-50%);
+    top: 45%;
+    left: 50%;
+    position: absolute;
+}
+
+.social-images img {
+    width: 100px;
+    height: 100px;
+    margin: 30px;
+}
+
+.social-media .x-button {
+    font-size: 40px;
+    font-weight: bolder;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.social-text {
+    width: 100px;
+    height: 40px;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: -20px;
+    left: 31px;
+    visibility: hidden;
+}
+
+.social-text2 {
+    width: 100px;
+    height: 40px;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: -20px;
+    left: 195px;
+    visibility: hidden;
+}
+
+.social-text3 {
+    width: 100px;
+    height: 40px;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: -20px;
+    left: 360px;
+    visibility: hidden;
+}
+
+.social-images .img1:hover .social-text {
+    visibility: visible;
+}
+
+.social-images .img2:hover .social-text2 {
+    visibility: visible;
+}
+
+.social-images .img3:hover .social-text3 {
+    visibility: visible;
+}

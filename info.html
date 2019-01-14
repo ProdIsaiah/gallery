@@ -15,12 +15,26 @@
 </head>
 <body>
 
-    <div class="center-logo">
+    <div id="logo" class="center-logo">
         <div class="logo-hover">
-            <img src="images/diamond3.png" alt="logo">
+            <img id="diamond" src="images/diamond3.png" alt="logo">
         </div>
         <div class="social-media">
-            
+            <div class="social-images">
+                <span class="img1">
+                <img src="/images/instagram.png" alt="instagram">
+                    <p class="social-text">Prod.Isaiah</p>
+                </span>
+                <span class="img2">
+                <img src="/images/Youtube.png" alt="youtube">
+                    <p class="social-text2">Prod.Isaiah</p>
+                </span>
+                <span class="img3">
+                <img src="/images/Snapchat.png" alt="Snapchat">
+                    <p class="social-text3">Prod.Isaiah</p>
+                </span>
+            </div>
+            <span id="x-button" class="x-button">+</span>
         </div>
     </div>
 
@@ -34,5 +48,14 @@
             <li><a href="info.html">Contact</a></li>
         </div>
     </div>
+    <script>
+            document.getElementById('diamond').addEventListener('click', function(){
+                document.querySelector('.social-media').style.display = 'flex';
+            });
+            
+            document.getElementById('x-button').addEventListener('click',function(){
+                document.querySelector('.social-media').style.display = 'none';
+            });
+    </script>
 </body>
 </html>
