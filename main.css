@@ -161,7 +161,6 @@ body, #slider, .wrap, .slide-content {
     cursor: pointer;
     list-style-type: none;
     float: left;
-    display: inline-block;
 }
 
 .footer  li {
