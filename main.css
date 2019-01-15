@@ -189,7 +189,7 @@ body, #slider, .wrap, .slide-content {
     height: 500px;
     background-position: center;
     background-size: cover;
-    background-image: url('/images/image8.jpg');
+    background-image: url('images/image8.jpg');
 }
 
 .image-description {
