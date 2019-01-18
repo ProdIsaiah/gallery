@@ -190,10 +190,9 @@ body, #slider, .wrap, .slide-content {
 }
 
 .image-description {
-    width: 50%;
+    width: 100%;
     height: 250px;
     position: relative;
-    margin-left: 25%;
     top: 60%;
     text-align: center;
     padding: 50px;
@@ -323,4 +322,13 @@ body, #slider, .wrap, .slide-content {
 
 .social-images .img3:hover .social-text3 {
     visibility: visible;
+}
+
+@media only screen and (max-width: 375px) {
+    .image-description {
+        font-size: 15px;
+        width: 100%;
+        left: 0;
+        margin-top: 40px;
+    }
 }
