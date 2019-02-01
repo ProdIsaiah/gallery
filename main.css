@@ -208,6 +208,7 @@ body, #slider, .wrap, .slide-content {
 .center-logo {
     width: 100vw;
     height: 100vh;
+    background: black;
 }
 
 .logo-hover {
