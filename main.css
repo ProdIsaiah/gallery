@@ -1,4 +1,3 @@
-
 body, #slider, .wrap, .slide-content {
     margin: 0;
     padding: 0;
@@ -182,6 +181,7 @@ body, #slider, .wrap, .slide-content {
 
 .about-image {
     transform: translate(-50%,-50%);
+    border: 2px solid white;
     left: 50%;
     top: 30%;
     position: absolute;
@@ -203,6 +203,13 @@ body, #slider, .wrap, .slide-content {
     font-size: 18px;
     font-weight: lighter;
     font-family: 'Poppins', sans-serif;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
 }
 
 .center-logo {
@@ -334,11 +341,18 @@ body, #slider, .wrap, .slide-content {
         font-size: 15px;
         width: 100%;
         height: 100px;
+        padding-top: 25px;
     }
     .about-image {
         height: 300px;
     }
     body, #slider, .wrap, .slide-content {
         height: 85vh;
+    }
+    .center-logo {
+        height: 90vh;
+    }
+    .about {
+        height: 90vh;
     }
 }
